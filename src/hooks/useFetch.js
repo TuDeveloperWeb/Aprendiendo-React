@@ -19,6 +19,8 @@ export const useFetch = (url) => {
         }
     )
 
+    /* Fetch es una solicitud asincrona significa que la ejecución del código no se detiene mientras se espera la respuesta del servidor. */
+
     const resp = await fetch(url);
     const data = await resp.json();
     
